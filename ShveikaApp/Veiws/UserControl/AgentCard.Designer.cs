@@ -42,9 +42,9 @@
             // PhotoBox
             // 
             this.PhotoBox.Image = global::ShveikaApp.Properties.Resources.picture;
-            this.PhotoBox.Location = new System.Drawing.Point(17, 18);
+            this.PhotoBox.Location = new System.Drawing.Point(17, 10);
             this.PhotoBox.Name = "PhotoBox";
-            this.PhotoBox.Size = new System.Drawing.Size(153, 106);
+            this.PhotoBox.Size = new System.Drawing.Size(208, 121);
             this.PhotoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PhotoBox.TabIndex = 0;
             this.PhotoBox.TabStop = false;
@@ -52,10 +52,10 @@
             // TypeAndTitleLbl
             // 
             this.TypeAndTitleLbl.AutoSize = true;
-            this.TypeAndTitleLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TypeAndTitleLbl.Location = new System.Drawing.Point(207, 18);
+            this.TypeAndTitleLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TypeAndTitleLbl.Location = new System.Drawing.Point(262, 18);
             this.TypeAndTitleLbl.Name = "TypeAndTitleLbl";
-            this.TypeAndTitleLbl.Size = new System.Drawing.Size(222, 18);
+            this.TypeAndTitleLbl.Size = new System.Drawing.Size(277, 23);
             this.TypeAndTitleLbl.TabIndex = 1;
             this.TypeAndTitleLbl.Text = "Тип | Наименование агента";
             // 
@@ -63,7 +63,7 @@
             // 
             this.DiscountLbl.AutoSize = true;
             this.DiscountLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DiscountLbl.Location = new System.Drawing.Point(602, 18);
+            this.DiscountLbl.Location = new System.Drawing.Point(860, 18);
             this.DiscountLbl.Name = "DiscountLbl";
             this.DiscountLbl.Size = new System.Drawing.Size(37, 18);
             this.DiscountLbl.TabIndex = 2;
@@ -72,47 +72,47 @@
             // qtyLbl
             // 
             this.qtyLbl.AutoSize = true;
-            this.qtyLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.qtyLbl.Location = new System.Drawing.Point(207, 45);
+            this.qtyLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.qtyLbl.Location = new System.Drawing.Point(262, 45);
             this.qtyLbl.Name = "qtyLbl";
-            this.qtyLbl.Size = new System.Drawing.Size(78, 20);
+            this.qtyLbl.Size = new System.Drawing.Size(100, 22);
             this.qtyLbl.TabIndex = 3;
             this.qtyLbl.Text = "Продажи";
             // 
             // PhoneLbl
             // 
             this.PhoneLbl.AutoSize = true;
-            this.PhoneLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PhoneLbl.Location = new System.Drawing.Point(207, 70);
+            this.PhoneLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PhoneLbl.Location = new System.Drawing.Point(262, 70);
             this.PhoneLbl.Name = "PhoneLbl";
-            this.PhoneLbl.Size = new System.Drawing.Size(77, 20);
+            this.PhoneLbl.Size = new System.Drawing.Size(96, 22);
             this.PhoneLbl.TabIndex = 4;
             this.PhoneLbl.Text = "Телефон";
             // 
             // PriorityLbl
             // 
             this.PriorityLbl.AutoSize = true;
-            this.PriorityLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PriorityLbl.Location = new System.Drawing.Point(312, 104);
+            this.PriorityLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PriorityLbl.Location = new System.Drawing.Point(426, 103);
             this.PriorityLbl.Name = "PriorityLbl";
-            this.PriorityLbl.Size = new System.Drawing.Size(131, 20);
+            this.PriorityLbl.Size = new System.Drawing.Size(162, 22);
             this.PriorityLbl.TabIndex = 5;
             this.PriorityLbl.Text = "Приоритетность";
             // 
             // PriorityTextLbl
             // 
             this.PriorityTextLbl.AutoSize = true;
-            this.PriorityTextLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PriorityTextLbl.Location = new System.Drawing.Point(176, 104);
+            this.PriorityTextLbl.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PriorityTextLbl.Location = new System.Drawing.Point(262, 103);
             this.PriorityTextLbl.Name = "PriorityTextLbl";
-            this.PriorityTextLbl.Size = new System.Drawing.Size(131, 20);
+            this.PriorityTextLbl.Size = new System.Drawing.Size(162, 22);
             this.PriorityTextLbl.TabIndex = 5;
             this.PriorityTextLbl.Text = "Приоритетность";
             // 
             // IDLbl
             // 
             this.IDLbl.AutoSize = true;
-            this.IDLbl.Location = new System.Drawing.Point(605, 110);
+            this.IDLbl.Location = new System.Drawing.Point(863, 110);
             this.IDLbl.Name = "IDLbl";
             this.IDLbl.Size = new System.Drawing.Size(16, 13);
             this.IDLbl.TabIndex = 6;
@@ -133,7 +133,7 @@
             this.Controls.Add(this.TypeAndTitleLbl);
             this.Controls.Add(this.PhotoBox);
             this.Name = "AgentCard";
-            this.Size = new System.Drawing.Size(685, 148);
+            this.Size = new System.Drawing.Size(962, 148);
             ((System.ComponentModel.ISupportInitialize)(this.PhotoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

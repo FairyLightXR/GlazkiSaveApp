@@ -108,6 +108,7 @@
             this.SearchTxt.Size = new System.Drawing.Size(268, 27);
             this.SearchTxt.TabIndex = 5;
             this.SearchTxt.Text = "Введите для поиска";
+            this.SearchTxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.SearchTxt_MouseClick);
             this.SearchTxt.TextChanged += new System.EventHandler(this.SearchTxt_TextChanged);
             // 
             // pictureBox1
