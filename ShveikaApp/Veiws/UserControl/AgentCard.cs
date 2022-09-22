@@ -68,6 +68,11 @@ namespace ShveikaApp
             {
                 DiscountLbl.Text = "25%";
             }
+            if ( Int32.Parse(DiscountLbl.Text.Remove(DiscountLbl.Text.Length - 1)) >=5)
+            {
+               TypeAndTitleLbl.ForeColor = Color.LightGreen;
+                DiscountLbl.ForeColor = Color.LightGreen;
+            }
         }
     }
 }

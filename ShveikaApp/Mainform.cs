@@ -13,7 +13,9 @@ namespace ShveikaApp
 {
     public partial class MainForm : Form
     {
+        
         public static List<Agent> agents = new List<Agent>();
+        public static List<AgentCard> Selectedcards = new List<AgentCard>();
         public MainForm()
         {
             InitializeComponent();
@@ -27,7 +29,43 @@ namespace ShveikaApp
                 card.GenerateAgentCard(agentCard);
                 flowLayoutPanel1.Controls.Add(card);
 
+                card.DoubleClick += Card_DoubleClick;
+                card.Click += Card_Click;
+
             }
+        }
+
+        private void Card_Click(object sender, EventArgs e)
+        {
+
+            AgentCard card = sender as AgentCard;
+            if (card.BackColor == Color.White)
+            {
+               
+                card.BackColor = Color.FromArgb(255, 233, 249);
+                Selectedcards.Add(card);
+            }
+            else
+            {
+                card.BackColor = Color.White;
+                Selectedcards.Remove(card);
+
+                
+            }
+            if (Selectedcards.Count > 1)
+            {
+                PriorityChangeBtn.Visible = true;
+            }
+            else
+            {
+                PriorityChangeBtn.Visible = false;
+            }
+        }
+
+        private void Card_DoubleClick(object sender, EventArgs e)
+        {
+            AgentCard card = sender as AgentCard;
+            //Selectedcards.Remove(card);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
