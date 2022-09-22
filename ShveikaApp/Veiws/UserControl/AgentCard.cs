@@ -28,16 +28,23 @@ namespace ShveikaApp
             PhotoBox.ImageLocation = path;
             TypeAndTitleLbl.Text = agent.AgentType.Title + " | " + agent.Title;
             PhoneLbl.Text = agent.Phone;
+            IDLbl.Text = Convert.ToString(agent.ID);
             int qty = 0;
+            int qtyAllPeriod = 0;
             decimal SaleSumm = 0;
             foreach(ProductSale sale in agent.ProductSale)
             {
+                
                 if (sale.SaleDate.Year == 2019)
                 {
-                    SaleSumm += qty * sale.Product.MinCostForAgent;
+                    qty += sale.ProductCount;
+                   
                 }
-                qty += sale.ProductCount;
-                
+                qtyAllPeriod += sale.ProductCount;
+                SaleSumm += qtyAllPeriod * sale.Product.MinCostForAgent;
+
+
+
             }
             qtyLbl.Text = qty + " Продаж за год";
             PriorityLbl.Text = agent.Priority.ToString();

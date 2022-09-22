@@ -38,11 +38,30 @@ namespace ShveikaApp
         public void SearchFilterSorting()
         {
 
+            #region Filtering
+
+            #endregion
+
         }
 
         private void SearchTxt_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void FilterCmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SortCmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DescChkBox_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

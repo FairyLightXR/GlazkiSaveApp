@@ -34,6 +34,8 @@
             this.qtyLbl = new System.Windows.Forms.Label();
             this.PhoneLbl = new System.Windows.Forms.Label();
             this.PriorityLbl = new System.Windows.Forms.Label();
+            this.PriorityTextLbl = new System.Windows.Forms.Label();
+            this.IDLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PhotoBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,17 +93,39 @@
             // 
             this.PriorityLbl.AutoSize = true;
             this.PriorityLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PriorityLbl.Location = new System.Drawing.Point(210, 104);
+            this.PriorityLbl.Location = new System.Drawing.Point(312, 104);
             this.PriorityLbl.Name = "PriorityLbl";
             this.PriorityLbl.Size = new System.Drawing.Size(131, 20);
             this.PriorityLbl.TabIndex = 5;
             this.PriorityLbl.Text = "Приоритетность";
+            // 
+            // PriorityTextLbl
+            // 
+            this.PriorityTextLbl.AutoSize = true;
+            this.PriorityTextLbl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PriorityTextLbl.Location = new System.Drawing.Point(176, 104);
+            this.PriorityTextLbl.Name = "PriorityTextLbl";
+            this.PriorityTextLbl.Size = new System.Drawing.Size(131, 20);
+            this.PriorityTextLbl.TabIndex = 5;
+            this.PriorityTextLbl.Text = "Приоритетность";
+            // 
+            // IDLbl
+            // 
+            this.IDLbl.AutoSize = true;
+            this.IDLbl.Location = new System.Drawing.Point(605, 110);
+            this.IDLbl.Name = "IDLbl";
+            this.IDLbl.Size = new System.Drawing.Size(16, 13);
+            this.IDLbl.TabIndex = 6;
+            this.IDLbl.Text = "Id";
+            this.IDLbl.Visible = false;
             // 
             // AgentCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.IDLbl);
+            this.Controls.Add(this.PriorityTextLbl);
             this.Controls.Add(this.PriorityLbl);
             this.Controls.Add(this.PhoneLbl);
             this.Controls.Add(this.qtyLbl);
@@ -124,5 +148,7 @@
         private System.Windows.Forms.Label qtyLbl;
         private System.Windows.Forms.Label PhoneLbl;
         private System.Windows.Forms.Label PriorityLbl;
+        private System.Windows.Forms.Label PriorityTextLbl;
+        public System.Windows.Forms.Label IDLbl;
     }
 }
