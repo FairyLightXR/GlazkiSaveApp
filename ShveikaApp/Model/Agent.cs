@@ -50,6 +50,45 @@ namespace ShveikaApp.Model
 
         public int Priority { get; set; }
 
+        public int Discount { get
+            {
+                int qty = 0;
+                int qtyAllPeriod = 0;
+                decimal SaleSumm = 0;
+                int discount = 0;
+                foreach (ProductSale sale in ProductSale)
+                {
+
+                    qtyAllPeriod += sale.ProductCount;
+                    SaleSumm += qtyAllPeriod * sale.Product.MinCostForAgent;
+
+
+
+                }
+                if (SaleSumm < 10000)
+                {
+                    discount = 0;
+                }
+                else if (SaleSumm >= 10000 && SaleSumm <= 50000)
+                {
+                    discount = 5;
+                }
+                else if (SaleSumm > 50000 && SaleSumm <= 150000)
+                {
+                    discount = 10;
+                }
+                else if (SaleSumm > 150000 && SaleSumm <= 500000)
+                {
+                    discount = 20;
+                }
+                else
+                {
+                    discount = 25;
+                }
+                return discount;
+            } 
+        }
+
         public virtual AgentType AgentType { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

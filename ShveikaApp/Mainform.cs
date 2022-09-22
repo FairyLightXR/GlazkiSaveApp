@@ -114,6 +114,19 @@ namespace ShveikaApp
 
                 }
             }
+
+            if (SortCmb.Text == "По скидке")
+            {
+                if (!DescChkBox.Checked)
+                {
+                    ListUpdate = ListUpdate.OrderBy(b => b.Discount).ToList();
+                }
+                else
+                {
+                    ListUpdate = ListUpdate.OrderByDescending(b => b.Discount).ToList();
+
+                }
+            }
             #endregion
 
             #region Searching
@@ -156,6 +169,11 @@ namespace ShveikaApp
         private void SearchTxt_MouseClick(object sender, MouseEventArgs e)
         {
             SearchTxt.Text = "";
+        }
+
+        private void PriorityChangeBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

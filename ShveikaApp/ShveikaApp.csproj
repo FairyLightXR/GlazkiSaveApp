@@ -73,6 +73,12 @@
     <Compile Include="Model\Shop.cs" />
     <Compile Include="Model\Supplier.cs" />
     <Compile Include="Utils\DbContext.cs" />
+    <Compile Include="Veiws\Other Forms\MassPriorityChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiws\Other Forms\MassPriorityChangeForm.Designer.cs">
+      <DependentUpon>MassPriorityChangeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Veiws\UserControl\AgentCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Mainform.resx">
       <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiws\Other Forms\MassPriorityChangeForm.resx">
+      <DependentUpon>MassPriorityChangeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Veiws\UserControl\AgentCard.resx">
       <DependentUpon>AgentCard.cs</DependentUpon>

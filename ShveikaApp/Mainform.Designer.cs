@@ -93,7 +93,8 @@
             this.SortCmb.Items.AddRange(new object[] {
             "Без сортировки",
             "Наименование",
-            "Приоритет"});
+            "Приоритет",
+            "По скидке"});
             this.SortCmb.Location = new System.Drawing.Point(474, 45);
             this.SortCmb.Name = "SortCmb";
             this.SortCmb.Size = new System.Drawing.Size(162, 28);
@@ -196,6 +197,7 @@
             this.PriorityChangeBtn.Text = "Изменить приоритет на...";
             this.PriorityChangeBtn.UseVisualStyleBackColor = false;
             this.PriorityChangeBtn.Visible = false;
+            this.PriorityChangeBtn.Click += new System.EventHandler(this.PriorityChangeBtn_Click);
             // 
             // MainForm
             // 

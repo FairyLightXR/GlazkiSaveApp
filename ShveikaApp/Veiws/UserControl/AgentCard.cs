@@ -30,8 +30,6 @@ namespace ShveikaApp
             PhoneLbl.Text = agent.Phone;
             IDLbl.Text = Convert.ToString(agent.ID);
             int qty = 0;
-            int qtyAllPeriod = 0;
-            decimal SaleSumm = 0;
             foreach(ProductSale sale in agent.ProductSale)
             {
                 
@@ -40,35 +38,11 @@ namespace ShveikaApp
                     qty += sale.ProductCount;
                    
                 }
-                qtyAllPeriod += sale.ProductCount;
-                SaleSumm += qtyAllPeriod * sale.Product.MinCostForAgent;
-
-
-
             }
             qtyLbl.Text = qty + " Продаж за год";
             PriorityLbl.Text = agent.Priority.ToString();
-            if (SaleSumm < 10000)
-            {
-                DiscountLbl.Text = "0%";
-            }
-            else if (SaleSumm >= 10000 && SaleSumm <= 50000)
-            {
-                DiscountLbl.Text = "5%";
-            }
-            else if (SaleSumm > 50000 && SaleSumm <= 150000)
-            {
-                DiscountLbl.Text = "10%";
-            }
-            else if (SaleSumm > 150000 && SaleSumm <= 500000)
-            {
-                DiscountLbl.Text = "20%";
-            }
-            else
-            {
-                DiscountLbl.Text = "25%";
-            }
-            if ( Int32.Parse(DiscountLbl.Text.Remove(DiscountLbl.Text.Length - 1)) >=5)
+           DiscountLbl.Text = agent.Discount.ToString() + "%";
+            if ( Int32.Parse(DiscountLbl.Text.Remove(DiscountLbl.Text.Length - 1)) >=25)
             {
                TypeAndTitleLbl.ForeColor = Color.LightGreen;
                 DiscountLbl.ForeColor = Color.LightGreen;
