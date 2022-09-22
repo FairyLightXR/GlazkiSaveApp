@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ShveikaApp.Model;
 using ShveikaApp.Utils;
+using ShveikaApp.Veiws.Other_Forms;
+
 namespace ShveikaApp
 {
     public partial class MainForm : Form
@@ -173,7 +175,10 @@ namespace ShveikaApp
 
         private void PriorityChangeBtn_Click(object sender, EventArgs e)
         {
-
+          MassPriorityChangeForm change = new MassPriorityChangeForm();
+            DialogResult dr = change.ShowDialog();
+            SearchFilterSorting();
+            PriorityChangeBtn.Visible = false;
         }
     }
 }

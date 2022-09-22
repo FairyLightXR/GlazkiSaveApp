@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PhotoBox = new System.Windows.Forms.PictureBox();
             this.TypeAndTitleLbl = new System.Windows.Forms.Label();
             this.DiscountLbl = new System.Windows.Forms.Label();
             this.qtyLbl = new System.Windows.Forms.Label();
@@ -36,18 +35,9 @@
             this.PriorityLbl = new System.Windows.Forms.Label();
             this.PriorityTextLbl = new System.Windows.Forms.Label();
             this.IDLbl = new System.Windows.Forms.Label();
+            this.PhotoBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PhotoBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PhotoBox
-            // 
-            this.PhotoBox.Image = global::ShveikaApp.Properties.Resources.picture;
-            this.PhotoBox.Location = new System.Drawing.Point(17, 10);
-            this.PhotoBox.Name = "PhotoBox";
-            this.PhotoBox.Size = new System.Drawing.Size(208, 121);
-            this.PhotoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PhotoBox.TabIndex = 0;
-            this.PhotoBox.TabStop = false;
             // 
             // TypeAndTitleLbl
             // 
@@ -119,6 +109,16 @@
             this.IDLbl.Text = "Id";
             this.IDLbl.Visible = false;
             // 
+            // PhotoBox
+            // 
+            this.PhotoBox.Image = global::ShveikaApp.Properties.Resources.picture;
+            this.PhotoBox.Location = new System.Drawing.Point(17, 10);
+            this.PhotoBox.Name = "PhotoBox";
+            this.PhotoBox.Size = new System.Drawing.Size(208, 121);
+            this.PhotoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PhotoBox.TabIndex = 0;
+            this.PhotoBox.TabStop = false;
+            // 
             // AgentCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,12 +144,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox PhotoBox;
-        private System.Windows.Forms.Label TypeAndTitleLbl;
-        private System.Windows.Forms.Label DiscountLbl;
-        private System.Windows.Forms.Label qtyLbl;
-        private System.Windows.Forms.Label PhoneLbl;
-        private System.Windows.Forms.Label PriorityLbl;
-        private System.Windows.Forms.Label PriorityTextLbl;
         public System.Windows.Forms.Label IDLbl;
+        public System.Windows.Forms.Label TypeAndTitleLbl;
+        public System.Windows.Forms.Label DiscountLbl;
+        public System.Windows.Forms.Label qtyLbl;
+        public System.Windows.Forms.Label PhoneLbl;
+        public System.Windows.Forms.Label PriorityLbl;
+        public System.Windows.Forms.Label PriorityTextLbl;
     }
 }
